@@ -27,9 +27,19 @@ body {
   color: #21325e;
   font-weight: 700;
   font-size: larger;
+  margin-left: 40px;
 }
 .dot {
   color: orange;
   font-weight: 700;
   font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .button1 {
+    display: none;
+  }
+  .button2 {
+    display: none;
+  }
 }
