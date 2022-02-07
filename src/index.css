@@ -43,3 +43,16 @@ body {
     display: none;
   }
 }
+.Main_body {
+  background-color: #fbf8f1;
+}
+.Login_Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20vh 0;
+}
+p {
+  font-weight: 500;
+}
