@@ -42,17 +42,64 @@ body {
   .button2 {
     display: none;
   }
+  .checkbox-text {
+    font-size: x-small;
+  }
 }
-.Main_body {
-  background-color: #fbf8f1;
-}
+
 .Login_Form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 20vh 0;
+  padding-top: 20vh;
 }
 p {
   font-weight: 500;
+}
+.input_address {
+  width: 350px;
+  justify-content: center;
+
+  align-items: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+.input_password {
+  width: 350px;
+  justify-content: center;
+
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.checkbox-text {
+  font-size: x-small;
+  font-weight: 600;
+  margin-right: 240px;
+}
+.forgot-pass {
+  font-size: x-small;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+.login_button {
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  height: 40px;
+  border: none;
+  background-color: #21325e;
+  color: white;
+  font-weight: 500;
+}
+
+.checkbox_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
