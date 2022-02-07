@@ -4,18 +4,18 @@ import React from "react"
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light bg-light ">
         <div className="container-fluid">
-          <a className="navbar-brand">Navbar</a>
+          <a>
+            <span className="Heading">ATools</span>
+            <span className="dot">.</span>
+          </a>
           <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
+            <button className="button1" type="submit">
+              Start Free Trial
+            </button>
+            <button className="button2" type="submit">
+              Login
             </button>
           </form>
         </div>
