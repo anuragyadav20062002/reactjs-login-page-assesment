@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
-
+/*****************Navbar Items*******************/
 .button2 {
   margin-right: 20px;
   background-color: orange;
@@ -35,15 +35,7 @@ body {
   font-size: larger;
 }
 
-@media (max-width: 768px) {
-  .button1 {
-    display: none;
-  }
-  .button2 {
-    display: none;
-  }
-}
-
+/*******************Login form items**************************/
 .Login_Form {
   display: flex;
   flex-direction: column;
@@ -99,4 +91,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*CSS to remove navbar buttons in mobile mode*/
+
+@media (max-width: 768px) {
+  .button1 {
+    display: none;
+  }
+  .button2 {
+    display: none;
+  }
 }
