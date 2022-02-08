@@ -14,11 +14,21 @@ const Login = () => {
 
   const changeEvent = (e) => {
     setData({ [e.target.name]: e.target.value })
-    console.log(e.target.value)
   }
 
   const submitData = (e) => {
-    console.log(e.target.value)
+    if (data.email === "" || data.password === "") {
+      alert("Something missing")
+    } else {
+      axios
+        .post("https://reqres.in/api/login", data)
+        .then((response) => {
+          console.log(response)
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+    }
   }
 
   return (
