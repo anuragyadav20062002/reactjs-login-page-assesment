@@ -22,8 +22,8 @@ const Login = () => {
   const submitData = (e) => {
     const url = "https://reqres.in/api/login"
     e.preventDefault()
-    if (data.email === "" || data.password === "") {
-      alert("Something missing")
+    if (data.password === "") {
+      console.log("Missing Password")
     } else {
       axios
         .post(url, {
