@@ -13,17 +13,26 @@ const Login = () => {
   })
 
   const changeEvent = (e) => {
-    setData({ [e.target.name]: e.target.value })
+    const newdata = { ...data }
+    newdata[e.target.name] = e.target.value
+    setData(newdata)
+    console.log(newdata)
   }
 
   const submitData = (e) => {
+    const url = "https://reqres.in/api/login"
+    e.preventDefault()
     if (data.email === "" || data.password === "") {
       alert("Something missing")
     } else {
       axios
-        .post("https://reqres.in/api/login", data)
+        .post(url, {
+          email: data.email,
+          password: data.password,
+        })
         .then((response) => {
           console.log(response)
+          console.log("yo")
         })
         .catch((error) => {
           console.log(error)
@@ -42,7 +51,7 @@ const Login = () => {
             placeholder="Enter Address*"
             className="input_address"
             name="email"
-            onChange={changeEvent}
+            onChange={(e) => changeEvent(e)}
             value={data.email}
           />
           <input
@@ -50,10 +59,15 @@ const Login = () => {
             placeholder="Enter Password*"
             className="input_password"
             name="password"
-            onChange={changeEvent}
+            onChange={(e) => changeEvent(e)}
             value={data.password}
           />
-          <button className="login_button" onClick={submitData}>
+          <button
+            className="login_button"
+            onClick={(e) => {
+              submitData(e)
+            }}
+          >
             Login
           </button>
         </div>
