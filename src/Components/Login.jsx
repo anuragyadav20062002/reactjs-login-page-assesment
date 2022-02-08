@@ -24,6 +24,9 @@ const Login = () => {
         <div className="checkbox_items">
           <input type="checkbox" className="checkBox" />
           <span className="checkbox-text">Remember Password</span>
+          <a href="" className="forgot-pass">
+            Forgot Password
+          </a>
         </div>
       </div>
     </>
